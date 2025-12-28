@@ -1,55 +1,37 @@
-# Qwik Library ⚡️
+<div align="center">
+  <img src="./logo.svg" width="384" alt="Qwik Squircle">
 
-- [Qwik Docs](https://qwik.dev/)
-- [Discord](https://qwik.dev/chat)
-- [Qwik on GitHub](https://github.com/QwikDev/qwik)
-- [@QwikDev](https://twitter.com/QwikDev)
-- [Vite](https://vitejs.dev/)
-- [Partytown](https://partytown.qwik.dev/)
-- [Mitosis](https://github.com/BuilderIO/mitosis)
-- [Builder.io](https://www.builder.io/)
+[![NPM Version](https://img.shields.io/npm/v/%40lgr.dev%2Fqwik-squircle?style=for-the-badge&color=%23009dfd)](https://www.npmjs.com/package/@lgr.dev/qwik-reveal)
+[![NPM Downloads](https://img.shields.io/npm/d18m/%40lgr.dev%2Fqwik-squircle?style=for-the-badge&color=%23ac7ef4)](https://www.npmjs.com/package/@lgr.dev/qwik-reveal)
+[![GitHub License](https://img.shields.io/github/license/lukeribchester/qwik.squircle?style=for-the-badge&color=%23444)](https://github.com/lukeribchester/qwik.reveal/blob/main/LICENSE.md)
+</div>
 
----
+# Qwik Squircle ⚡️
 
-## Project Structure
+TK.
 
-Inside your project, you'll see the following directories and files:
+<br>
 
-```
-├── public/
-│   └── ...
-└── src/
-    ├── components/
-    │   └── ...
-    └── index.ts
-```
+## Browser Support
 
-- `src/components`: Recommended directory for components.
+This library is supported by **96%** of browsers.
 
-- `index.ts`: The entry point of your component library, make sure all the public components are exported from this file.
+## Preview
 
-## Development
+<br>
 
-Development mode uses [Vite's development server](https://vitejs.dev/). For Qwik during development, the `dev` command will also server-side render (SSR) the output. The client-side development modules are loaded by the browser.
+# Get Started
 
-```
-npm run dev
+## Installation
+
+### 1. Install
+
+Install the `@lgr.dev/qwik-squircle` dependency using your preferred package manager.
+
+```shell
+npm install @lgr.dev/qwik-squircle
 ```
 
-> Note: during dev mode, Vite will request many JS files, which does not represent a Qwik production build.
+## Usage
 
-## Production
-
-The production build should generate the production build of your component library in (./lib) and the typescript type definitions in (./lib-types).
-
-```
-npm run build
-```
-
-## sideEffects: false
-
-This package is configured with "sideEffects": false in its package.json.<br/>
-This tells bundlers that the module [has no side effects](https://webpack.js.org/guides/tree-shaking/#mark-the-file-as-side-effect-free) when imported.<br/>
-Consequently, to maintain the integrity of tree-shaking optimizations, please ensure your code truly contains no side effects (such as modifying global variables or the DOM upon import).<br/>
-If your module does introduce side effects, remove "sideEffects": false or specify the specific files with side effects.<br/>
-Be sure to only remove it from the specific file where the global is being set. Finally, verify that your build continues to function as expected after making any adjustments to the sideEffects setting.
+# Customisation
