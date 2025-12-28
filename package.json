@@ -2,6 +2,32 @@
   "name": "@lgr.dev/qwik-squircle",
   "version": "0.0.1",
   "description": "A Qwik library for squircles",
+  "keywords": [
+    "Qwik",
+    "Qwik City",
+    "Squircles",
+    "Squircle"
+  ],
+  "homepage": "https://qwik-squircle.lgr.dev",
+  "bugs": {
+    "url": "https://github.com/lukeribchester/qwik.squircle/issues"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Luke Gareth Ribchester",
+    "url": "https://luke.gr"
+  },
+  "funding": {
+    "type": "github",
+    "url": "https://github.com/sponsors/lukeribchester"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lukeribchester/qwik.squircle.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
   "main": "./lib/index.qwik.mjs",
   "qwik": "./lib/index.qwik.mjs",
   "types": "./lib-types/index.d.ts",
