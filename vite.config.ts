@@ -2,13 +2,14 @@ import { defineConfig } from "vite";
 import pkg from "./package.json";
 import { qwikVite } from "@builder.io/qwik/optimizer";
 import tsconfigPaths from "vite-tsconfig-paths";
-import tailwindcss from "@tailwindcss/vite";
+
 const { dependencies = {}, peerDependencies = {} } = pkg as any;
 const makeRegex = (dep: any) => new RegExp(`^${dep}(/.*)?$`);
 const excludeAll = (obj: {}) => Object.keys(obj).map(makeRegex);
 
 export default defineConfig(() => {
   return {
+    publicDir: false,
     build: {
       target: "es2020",
       lib: {
@@ -30,6 +31,6 @@ export default defineConfig(() => {
         ],
       },
     },
-    plugins: [qwikVite(), tsconfigPaths({ root: "." }), tailwindcss()],
+    plugins: [qwikVite(), tsconfigPaths({ root: "." })],
   };
 });
