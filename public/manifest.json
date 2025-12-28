@@ -1,0 +1,9 @@
+{
+  "$schema": "https://json.schemastore.org/web-manifest-combined.json",
+  "name": "qwik.squircle",
+  "short_name": "Qwik Squircle",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#fff",
+  "description": "A Qwik library for squircles"
+}
