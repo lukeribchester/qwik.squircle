@@ -1,7 +1,7 @@
 {
-  "name": "my-qwik-library-name",
+  "name": "@lgr.dev/qwik-squircle",
   "version": "0.0.1",
-  "description": "Create a Qwik library",
+  "description": "A Qwik library for squircles",
   "main": "./lib/index.qwik.mjs",
   "qwik": "./lib/index.qwik.mjs",
   "types": "./lib-types/index.d.ts",
