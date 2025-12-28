@@ -4,8 +4,8 @@ import { qwikVite } from "@builder.io/qwik/optimizer";
 import tsconfigPaths from "vite-tsconfig-paths";
 
 const { dependencies = {}, peerDependencies = {} } = pkg as any;
-const makeRegex = (dep) => new RegExp(`^${dep}(/.*)?$`);
-const excludeAll = (obj) => Object.keys(obj).map(makeRegex);
+const makeRegex = (dep: any) => new RegExp(`^${dep}(/.*)?$`);
+const excludeAll = (obj: {}) => Object.keys(obj).map(makeRegex);
 
 export default defineConfig(() => {
   return {
